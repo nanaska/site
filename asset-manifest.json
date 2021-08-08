@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b87bdca.chunk.css",
+    "main.css": "/static/css/main.444b0b35.chunk.css",
     "main.js": "/static/js/main.834e6eba.chunk.js",
     "main.js.map": "/static/js/main.834e6eba.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8b7e8e18.js",
@@ -8,14 +8,14 @@
     "static/js/2.e2330414.chunk.js": "/static/js/2.e2330414.chunk.js",
     "static/js/2.e2330414.chunk.js.map": "/static/js/2.e2330414.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.9b87bdca.chunk.css.map": "/static/css/main.9b87bdca.chunk.css.map",
+    "static/css/main.444b0b35.chunk.css.map": "/static/css/main.444b0b35.chunk.css.map",
     "static/js/2.e2330414.chunk.js.LICENSE.txt": "/static/js/2.e2330414.chunk.js.LICENSE.txt",
     "static/media/HeroSection.css": "/static/media/5.2c77da5a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8b7e8e18.js",
     "static/js/2.e2330414.chunk.js",
-    "static/css/main.9b87bdca.chunk.css",
+    "static/css/main.444b0b35.chunk.css",
     "static/js/main.834e6eba.chunk.js"
   ]
 }
