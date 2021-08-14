@@ -20,7 +20,6 @@
     />
     <title>Сагай Палермо</title>
     <link href="/static/css/main.229c1492.chunk.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div id="root"></div>
@@ -116,84 +115,44 @@
     </script>
     <script src="/static/js/2.7596632e.chunk.js"></script>
     <script src="/static/js/main.54685496.chunk.js"></script>
-    <div class="contact-form__wrapper">
-      <form
-        id="form-contact"
-        method="POST"
-        class="contact-form"
-        autocomplete="off"
-        enctype="multipart/form-data"
-      >
-        <p class="contact-form__title">
-          Закажите обратный звонок и наш консультант свяжется с вами
-        </p>
-        <p class="contact-form__message"></p>
-        <div
-          class="contact-form__input-wrapper contact-form__input-wrapper_name"
-        >
-          <input
-            name="name"
-            type="text"
-            class="contact-form__input contact-form__input_name"
-            tabindex="0"
-            placeholder="Введите ваше имя"
-          />
-        </div>
-        <div
-          class="contact-form__input-wrapper contact-form__input-wrapper_phone"
-        >
-          <input
-            name="phone"
-            type="tel"
-            class="contact-form__input contact-form__input_phone"
-            tabindex="0"
-            placeholder="Введите ваш телефон"
-          />
-        </div>
-        <div class="contact-form__input-wrapper">
-          <input
-            type="file"
-            name="file"
-            id="contact-form__input_file"
-            class="contact-form__input contact-form__input_file"
-          />
-          <label
-            for="contact-form__input_file"
-            class="contact-form__file-button"
-          >
-            <span class="contact-form__file-text">Выберите файл</span>
-          </label>
-        </div>
+    <form action="telegram.php" method="POST">
+      <legend>Заголовок формы</legend>
+
+      <div class="form-group">
         <input
-          name="theme"
-          type="hidden"
-          class="contact-form__input contact-form__input_theme"
-          value="Заявка с сайта"
+          type="text"
+          class="form-control"
+          id=""
+          name="name"
+          placeholder="Введите имя"
         />
-        <button type="submit" class="contact-form__button">Отправить</button>
-      </form>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="/telegramform/js/telegramform.js"></script>
-    <script>
-      let inputs = document.querySelectorAll(".contact-form__input_file");
-      Array.prototype.forEach.call(inputs, function (input) {
-        let label = input.nextElementSibling,
-          labelVal = label.querySelector(".contact-form__file-text").innerText;
+      </div>
 
-        input.addEventListener("change", function (e) {
-          let countFiles = "";
-          if (this.files && this.files.length >= 1)
-            countFiles = this.files.length;
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          id=""
+          name="phone"
+          placeholder="Введите телефон"
+        />
+      </div>
 
-          if (countFiles)
-            label.querySelector(".contact-form__file-text").innerText =
-              "Выбрано файлов: " + countFiles;
-          else
-            label.querySelector(".contact-form__file-text").innerText =
-              labelVal;
-        });
-      });
-    </script>
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          id=""
+          name="email"
+          placeholder="Введите email"
+        />
+      </div>
+
+      <div class="form-group">
+        <textarea name="msg" placeholder="введите сообщение"></textarea>
+      </div>
+
+      <button type="submit" class="btn">Отправить форму</button>
+    </form>
   </body>
 </html>
